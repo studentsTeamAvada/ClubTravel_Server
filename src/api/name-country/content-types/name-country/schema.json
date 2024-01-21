@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "name_countries",
+  "info": {
+    "singularName": "name-country",
+    "pluralName": "name-countries",
+    "displayName": "NameCountry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "component",
+      "repeatable": true,
+      "component": "country.select-country"
+    }
+  }
+}
