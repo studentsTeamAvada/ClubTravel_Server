@@ -362,29 +362,29 @@ export interface AdminTransferTokenPermission extends Schema.CollectionType {
   };
 }
 
-export interface ApiNameCountryNameCountry extends Schema.CollectionType {
-  collectionName: 'name_countries';
+export interface ApiFindInfoFindInfo extends Schema.CollectionType {
+  collectionName: 'find_infos';
   info: {
-    singularName: 'name-country';
-    pluralName: 'name-countries';
-    displayName: 'NameCountry';
+    singularName: 'find-info';
+    pluralName: 'find-infos';
+    displayName: 'findInfo';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
-    name: Attribute.Component<'country.select-country', true>;
+    search: Attribute.JSON;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
-      'api::name-country.name-country',
+      'api::find-info.find-info',
       'oneToOne',
       'admin::user'
     > &
       Attribute.Private;
     updatedBy: Attribute.Relation<
-      'api::name-country.name-country',
+      'api::find-info.find-info',
       'oneToOne',
       'admin::user'
     > &
@@ -808,7 +808,7 @@ declare module '@strapi/types' {
       'admin::api-token-permission': AdminApiTokenPermission;
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
-      'api::name-country.name-country': ApiNameCountryNameCountry;
+      'api::find-info.find-info': ApiFindInfoFindInfo;
       'plugin::upload.file': PluginUploadFile;
       'plugin::upload.folder': PluginUploadFolder;
       'plugin::content-releases.release': PluginContentReleasesRelease;

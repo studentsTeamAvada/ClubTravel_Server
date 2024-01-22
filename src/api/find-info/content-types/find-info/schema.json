@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "find_infos",
+  "info": {
+    "singularName": "find-info",
+    "pluralName": "find-infos",
+    "displayName": "findInfo"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "search": {
+      "type": "json"
+    }
+  }
+}
