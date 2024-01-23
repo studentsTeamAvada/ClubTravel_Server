@@ -408,6 +408,7 @@ export interface ApiTourTour extends Schema.CollectionType {
     data: Attribute.String;
     price: Attribute.Integer;
     img: Attribute.Media;
+    webP: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -22,6 +22,17 @@
       "type": "integer"
     },
     "img": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "webP": {
       "allowedTypes": [
         "images",
         "files",
